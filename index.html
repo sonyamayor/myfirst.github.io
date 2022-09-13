@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title> супер-сайт </title>
+</head>
+
+<body>
+    <a href="https://example.com/" title="example.com">Абсолютная гиперссылка(1) </a><br>
+
+    <a href="https://example.com/%22%3E" title="example"> Абсолютная гиперссылка в протоколе https(2) </a> <br>
+
+    <a href=" ftp://example.com/Temp/file.txt">ссылка без авторизации(3)</a><br>
+
+    <a href="ftp://example.com/Temp/file.txt/s0172045:pass123@example.com">ссылка с авторизацией(4)</a><br>
+
+    <a
+        href="https://www.kubsu.ru/ru/education/schedule#:~:text=%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%2D%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82">
+        Кубгуновости(5)
+    </a> <br>
+
+    <a
+        href="file:///D:/vs%20code/demo.html#:~:text=%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83%20%D1%81%20%D0%B4%D0%B2%D1%83%D0%BC%D1%8F%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%D0%BC%D0%B8%20%D0%B2%20URL%20(7)">
+        ссылку на фрагмент текущей страницы(6) </a> <br>
+
+        <a href="https://www.onlinestore.ru?product=t-shitt&color=white" target="_blank">ссылка с двумя параметрами в URL(7)</a></br>
+
+    
+    <p>список ссылок основной навигации сайта с подписями title(8)</p>
+        <nav>
+            <ul>
+                <li><a href="#task1" title="task">задачи</a></li>
+                <li><a href="#form" title="form">формы</a></li>
+            </ul>
+        </nav>
+<br>
+
+    <a="example.com">без href(9) </a> <br>
+
+        <a href=""> ссылку с пустым href (10) </a> <br>
+
+        <a href="https://www.kubsu.ru/ru/education/schedule#:~:text=%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%2D%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82%22%3E"
+            rel="nofollow"> ссылку, по которой запрещен переход поисковикам (11) </a> <br>
+
+        <noindex><a href="http://site.com/">запрещенная для индексации поисковиками(12)</a></noindex><br>
+
+        контекстную в <a href="https://example.com/" title="example.com">тексте</a> абзаца(13) </a><br>
+
+        <a href="https://yandex.ru/images/search?pos=0&img_url=http%3A%2F%2Fproprikol.ru%2Fwp-content%2Fuploads%2F2021%2F01%2Fkartinki-solnyshko-53.jpg&text=картинка%20солнышка&lr=35&rpt=simage&source=serp">
+            <img src="https://proprikol.ru/wp-content/uploads/2021/01/kartinki-solnyshko-53.jpg" width="300" height="222"
+                alt="аа">(14)</a><br>
+
+        <p><img src="https://proza.ru/pics/2020/12/05/878.jpg" width="300" height="222"
+                usemap="#map" alt="Навигация">(15)</p>
+        <p><map name="map"> <area shape="poly" alt="Закладка 2"
+                    coords="210,27, 203,9, 202,6, 197,2, 192,1, 120,1, 115,2, 110,6, 112,9, 119,27, 119,32, 211,32, 210,27"
+                    href="https://yandex.ru/images/search?text=картинка%20тучки&lr=35&pos=14&img_url=http%3A%2F%2Fproza.ru%2Fpics%2F2020%2F12%2F05%2F878.jpg&rpt=simage"> <br>
+
+                <a href="about"> О компании (16) </a> <br>
+
+                <a href="./about/page"> относительную на страницу в каталоге about (17)</a> <br>
+
+                <a href="../page"> относительную на страницу в каталоге уровнем выше текущего(18)</a><br>
+
+                <a href="../../page"> относительную на страницу в каталоге двумя уровнями выше (19)</a><br>
+
+                <a href="/">сокращенную на главную(20)</a><br>
+
+                <a href="pages/page"> сокращенную ссылку на внутреннюю (21)</a><br>
+
+
+                <h1>Пример формы HTML</h1>
+                <form action="C:/" method="POST">
+                    <label>
+                        Однострочное текстовое поле:<br />
+                        <input name="name" value="Имя" />
+                    </label><br />
+
+                    <label>
+                        Поле email:<br />
+                        <input name="почта" value="primer@example.com" type="email" />
+                    </label><br />
+
+                    <label>
+                        Поле даты рождения:<br />
+                        <input name="дата рождения" value="2004-09-12" type="date" />
+                    </label><br />
+                    <label>
+                        Выбери настроение:<br />
+                        <label><input type="radio" checked="checked1" name="radio-group-1" value="Значение2" />
+                            Очень весёлое</label><br />
+                        <label><input type="radio" name="radio-group-1" value="Значение2" />
+                            Просто весёлое</label><br />
+                        <label><input type="radio" name="radio-group-1" value="Значение2" />
+                            Нормальное</label><br />
+                        <label><input type="radio" name="radio-group-1" value="Значение2" />
+                            Грустное</label><br />
+                    </label>
+
+                    <label>Пол:<br />
+                        <label><input type="radio" checked="checked" name="radio-group-2" value="Значение1" />
+                            Женщина</label>
+                        <label><input type="radio" name="radio-group-2" value="Значение2" />
+                            Мужчина</label><br />
+                    </label>
+
+                    <label>
+                        Что бы ты сейчас хотел?
+                        <br />
+                        <select name="field-name-4[]" multiple="multiple">
+                            <option value="Значение1">мороженное</option>
+                            <option value="Значение2" selected="selected">шоколадка
+                            <option value="Значение3" selected="selected">пирожок
+                            <option value="Значение2" selected="selected">домой
+                        </select>
+                    </label><br />
+
+                    <label>
+                        биография:<br />
+                        <textarea name="field-name-2">О себе хочу сказать...</textarea>
+                    </label><br />
+
+                    Контракт: <br />
+                    <label><input type="checkbox" checked="checked" name="check-1" />
+                        С контрактом ознакомлен (а)</label><br />
+
+                    Кнопка отправки формы:
+                    <input type="submit" value="Отправить" />
+                </form>
+
+</body>
+
+
+
+
+</html>
